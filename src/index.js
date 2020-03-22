@@ -16,7 +16,7 @@ function assertServerError (res) {
 }
 
 module.exports = class AwsS3Multipart extends Plugin {
-  static VERSION = '1.0.0'
+  //static VERSION = '1.0.0'
 
   constructor (uppy, opts) {
     super(uppy, opts)
