@@ -18,6 +18,17 @@
   "bugs": {
     "url": "https://github.com/sandasq/uppy-aws-s3-multipart-direct/issues"
   },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "",
+    "build": "babel src -d dist",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm version patch",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sandasq/uppy-aws-s3-multipart-direct"
