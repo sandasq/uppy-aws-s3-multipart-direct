@@ -1,32 +1,26 @@
 {
   "name": "uppy-aws-s3-multipart-direct",
-  "description": "Upload to Amazon S3 with Uppy and S3's Multipart upload strategy",
   "version": "1.0.0",
+  "description": "Upload to Amazon S3 with Uppy and S3's Multipart direct",
+  "main": "dist/index.js",
+  "private": false,
+  "author": "Sandy",
   "license": "MIT",
-  "main": "lib/index.js",
-  "types": "types/index.d.ts",
-  "keywords": [
-    "file uploader",
-    "aws s3",
-    "amazon s3",
-    "s3",
-    "uppy",
-    "uppy-plugin",
-    "multipart"
-  ],
-  "homepage": "https://github.com/sandasq/uppy-aws-s3-multipart-direct",
-  "bugs": {
-    "url": "https://github.com/sandasq/uppy-aws-s3-multipart-direct/issues"
-  },
+  "type": "module",
   "files": [
     "dist/**/*"
   ],
   "scripts": {
     "test": "",
+    "build": "babel src -d dist",
     "prepare": "npm run build",
     "prepublishOnly": "npm version patch",
     "version": "git add -A",
     "postversion": "git push && git push --tags"
+  },
+  "homepage": "https://github.com/sandasq/uppy-aws-s3-multipart-direct",
+  "bugs": {
+    "url": "https://github.com/sandasq/uppy-aws-s3-multipart-direct/issues"
   },
   "repository": {
     "type": "git",
